@@ -26,6 +26,6 @@ Source the script into bash
 
     $. todir
 
-and create the shortcuts on a file that gets loaded onto BASH
+and create the shortcuts on a file that gets sourced into bash
 
     to_dir "rp" "$HOME/repos/"
