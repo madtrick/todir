@@ -43,7 +43,7 @@ to_dir(){
   basedir=$2
   wrapper_name="_complete_dir_${alias_name}"
 
-  alias ${alias_name}="to ${basedir}"
-  _make-completion-wrapper _complete_dir ${wrapper_name} to ${basedir}
+  alias ${alias_name}="_to ${basedir}"
+  _make-completion-wrapper _complete_dir ${wrapper_name} _to ${basedir}
   complete -o bashdefault -o default -o nospace -F ${wrapper_name} ${alias_name}
 }
